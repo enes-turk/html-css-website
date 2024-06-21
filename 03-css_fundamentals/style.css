@@ -7,6 +7,11 @@ li {
   font-family: sans-serif;
 }
 
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
 h1 {
   font-size: 26px;
   text-transform: uppercase;
@@ -19,6 +24,8 @@ h2 {
 
 h3 {
   font-size: 30px;
+  /* center */
+  text-align: center;
 }
 
 h4 {
@@ -53,4 +60,13 @@ li {
 
 .related {
   list-style: none;
+}
+
+.main-header {
+  background-color: #ececec;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border: 5px solid #1098ad;
 }
