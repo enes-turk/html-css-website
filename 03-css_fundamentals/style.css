@@ -137,6 +137,33 @@ button {
   right: 20px;
 }
 
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h3 + p::first-line {
+  color: red;
+}
+
+h2 {
+  position: relative;
+
+}
+
+h2::after {
+  content: "TOP";
+  font-size: 20px;
+  color: #1098ad;
+  background-color: yellow;
+  margin-left: 10px;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -15px;
+  right: -25px;
+
+}
 /* resolving conflicts */
 
 /* id */
