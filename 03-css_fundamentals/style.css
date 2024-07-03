@@ -1,10 +1,31 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+body {
   font-family: sans-serif;
+  color: #444;
+
+  border-top: #1098ad 10px solid;
+}
+
+.container {
+  width: 70%;
+  /* center */
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #ececec;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
 }
 
 h1,
@@ -62,15 +83,7 @@ li {
   list-style: none;
 }
 
-.main-header {
-  background-color: #ececec;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border: 5px solid #1098ad;
-}
-
+/* styling links */
 a:link {
   color: #1098ad;
   text-decoration: none;
@@ -90,3 +103,33 @@ a:active {
   background-color: black;
   font-style: italic;
 }
+
+.post-img {
+  width: 50 %;
+  height: auto;
+}
+
+/* resolving conflicts */
+
+/* id */
+#copyright {
+  color: red;
+}
+
+/* class */
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+/* element */
+footer p {
+  color: green;
+}
+
+/* important keyword is used to override the previous styles. 
+It is not recommended to use it because it can make the code 
+difficult to maintain. */
