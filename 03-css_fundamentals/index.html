@@ -6,19 +6,19 @@
     <title>The Basic Language of the Web: HTML</title>
   </head>
   <body>
+    <header class="main-header clearfix">
+      <h1>📘 The Code Magazine</h1>
+
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="blog.html">BLOG</a>
+        <a href="#">CHALLANGES</a>
+        <a href="#">FLEXBOX</a>
+        <a href="#">CSS GRID</a>
+      </nav>
+    </header>
     <div class="container">
       <!-- Header -->
-      <header class="main-header">
-        <h1>📘 The Code Magazine</h1>
-
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="blog.html">Blog</a>
-          <a href="#">Challenges</a>
-          <a href="#">FlexBox</a>
-          <a href="#">CSS Grid</a>
-        </nav>
-      </header>
       <article>
         <header>
           <h2>The Basic Language of the Web: HTML</h2>
@@ -28,9 +28,10 @@
             alt="Headshot of Laura Jones"
             width="50"
             height="50"
+            class="author-img"
           />
 
-          <p id="author">
+          <p class="author">
             Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
           </p>
 
