@@ -1,0 +1,178 @@
+body {
+  font-family: sans-serif;
+  color: #444;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-header {
+  background-color: #f4f4f4;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 5px solid #1098ad;
+}
+
+nav {
+  font-size: 18px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #1098ad;
+}
+
+nav a:hover {
+  color: #1098ad;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 40px;
+  margin: 60px 0;
+  flex-grow: 1;
+}
+
+article {
+  flex: 3;
+}
+
+aside {
+  flex: 1;
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 20px;
+  align-self: flex-start;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.author-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.related {
+  list-style: none;
+  padding: 0;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.related-post img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+}
+
+.related-link {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #1098ad;
+  text-decoration: none;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-style: italic;
+  color: #444;
+}
+
+footer {
+  background-color: #1098ad;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.like-button {
+  font-size: 22px;
+  padding: 15px 25px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1098ad;
+  color: white;
+  border: none;
+  border-radius: 50px;
+}
+
+@media (max-width: 900px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+  }
+}
